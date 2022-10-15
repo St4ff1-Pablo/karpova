@@ -2,15 +2,32 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  cursor: wait;
 }
 
-.nav-list{
+a:link,
+a:visited,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+.nav-list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
 }
 
-li{
+li {
   display: inline;
   padding: 1rem;
+}
+.login-icon {
+  margin-right: 10px;
+}
+.header-videos{
+  display: flex;
+}
+video:nth-child(1),
+video:nth-child(2) {
+  width: 50%;
 }
