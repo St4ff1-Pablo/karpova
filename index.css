@@ -2,4 +2,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  cursor: wait;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: space-around;
+}
+
+li{
+  display: inline;
+  padding: 1rem;
 }
