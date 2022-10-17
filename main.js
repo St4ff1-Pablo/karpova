@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
     if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
         //scroll down
         nav.classList.add('hide');
-nav.style.backgroundColor = 'rgb(255, 255, 255, 0.5)'
+// nav.style.backgroundColor = 'rgb(255, 255, 255, 0.5)'
 
     }
     if(lastScroll<defaultOffset){
