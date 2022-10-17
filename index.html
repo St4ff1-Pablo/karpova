@@ -5,7 +5,10 @@
       rel="icon"
       sizes="192x192"
       href="https://static.wixstatic.com/media/59e1b2_a5113f2312724d3fac35273dcd4bedaa%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/59e1b2_a5113f2312724d3fac35273dcd4bedaa%7Emv2.jpg">
-    <meta charset="UTF-8">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
@@ -20,22 +23,35 @@
       </div>
       <div class="exit-search"></div>
     </section>
+    <section class="selected-products-holder">
+      <div class="selected-products">
+        <div class="selected-products-header"><h2>Cart</h2><div class="close-btn-selected-products"></div></div>
+        <div class="selected-products-content">
+          <a href=""><p>Your cart is empty <br> Go to shop &#8594;</p></a>
+        </div>
+      </div>
+    </section>
+    <div class="exit-selected-products"></div>
+
     <header>
       <nav class="nav">
           <ul class="header-content-holder header-text-holder">
-            <li><a href="#!">Shop</a></li>
-            <li class="search-li"><a href="#!">Search</a></li>
-            <li> <select id="currency" class="currencyList">
-              <option selected>USD</option>
-              <option>EUR</option>
-              <option>UAH</option>
-              <option>KWD</option>
-              <option>QAR</option>
-              <option>AED</option>
-          </select></li>
+            <li><a href="">Shop</a></li>
+            <li class="search-li"><a href="">Search</a></li>
+            <li class="select-holder">
+              
+               <select id="currency">
+                  <option selected value="USD">USD</option>
+                  <option value="AED">AED</option>
+                  <option value="EUR">EUR</option>
+                  <option value="KWD">KWD</option>
+                  <option value="UAH">UAH</option>
+                  <option value="QAR">QAR</option>
+                 </select>
+            </li>
             <li>
               <a href="#!">
-                <span class="cart-holder"><img src="./img/Header/cart_icon.svg" alt="Cart" class="cart"/></span>
+                <span id="cart-holder"><img src="./img/Header/cart_icon.svg" alt="Cart" class="cart"/></span>
               </a>
             </li>
           </ul>
@@ -47,10 +63,13 @@
           </span>
           <ul class="header-content-holder header-text-holder">
             <li> 
-              <select class = "change-lang" id="language">
-                  <option value="ua">UA</option>
-                  <option value="ru">RU</option>
-                  <option value="en" selected>EN</option>
+              <select id="language">
+                <option value="UK">UK</option>
+                <option value="EN">EN</option>
+                <option value="RU">RU</option>
+                <option value="AR">AR</option>
+                <option value="TR">TR</option>
+                <option value="IT">IT</option>
               </select>
             </li>
             <li><a href="#!">About us</a></li>
@@ -70,7 +89,7 @@
         
       <div class="video-holder">
         <video src="./Video/right-vid.mp4" loop autoplay muted></video>
-        <!-- <button class="header-button">NEW ARRIVALS</button> -->
+        <button class="header-button" role="button"><span class="text">Shop</span><span>More</span></button>
       </div>
       </div>
     </header>
@@ -95,7 +114,7 @@
       </ul>
     </footer>
      <!--<button id="messageButton"><img src="./img/Footer/messages.svg"></button> -->
-    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
