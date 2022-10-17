@@ -4,52 +4,98 @@
     <link
       rel="icon"
       sizes="192x192"
-      href="https://static.wixstatic.com/media/59e1b2_a5113f2312724d3fac35273dcd4bedaa%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/59e1b2_a5113f2312724d3fac35273dcd4bedaa%7Emv2.jpg"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+      href="https://static.wixstatic.com/media/59e1b2_a5113f2312724d3fac35273dcd4bedaa%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/59e1b2_a5113f2312724d3fac35273dcd4bedaa%7Emv2.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>KARPOVA</title>
+    
   </head>
   <body>
+    <section class="search-section">
+      <div class="search-holder">
+      <input type="text" placeholder="Enter product name" class="search">
+      <button class="search-button"><img src="./img/Header/glass.svg" alt=""></button>
+      </div>
+      <div class="exit-search"></div>
+    </section>
     <header>
-      <nav>
-        <ul class="nav-list">
-          <span>
+      <nav class="nav">
+          <ul class="header-content-holder header-text-holder">
             <li><a href="#!">Shop</a></li>
-            <li><a href="#!">Search</a></li>
-            <li><a href="#!">Uah</a></li>
+            <li class="search-li"><a href="#!">Search</a></li>
+            <li> <select id="currency" class="currencyList">
+              <option selected>USD</option>
+              <option>EUR</option>
+              <option>UAH</option>
+              <option>KWD</option>
+              <option>QAR</option>
+              <option>AED</option>
+          </select></li>
             <li>
-              <a href="#!"
-                ><img src="./img/cart_icon.png" alt="Cart" class="cart-icon"
-              /></a>
+              <a href="#!">
+                <span class="cart-holder"><img src="./img/Header/cart_icon.svg" alt="Cart" class="cart"/></span>
+              </a>
+            </li>
+          </ul>
+          <span class="header-content-holder">
+              <a href="#!">
+                <img src="./img/Header/logo.svg" alt="KARPOVA UKRAINE" class="logo">
+              </a>
             </li>
           </span>
-          <span>
-            <li class="nav-logo">
-              <a href="#!"
-                ><img src="./img/logo.webp" alt="KARPOVA UKRAINE" class="logo"
-              /></a>
+          <ul class="header-content-holder header-text-holder">
+            <li> 
+              <select class = "change-lang" id="language">
+                  <option value="ua">UA</option>
+                  <option value="ru">RU</option>
+                  <option value="en" selected>EN</option>
+              </select>
             </li>
-          </span>
-          <span>
-            <li><a href="#!">RU</a></li>
-
             <li><a href="#!">About us</a></li>
             <li><a href="#!">Also</a></li>
             <li>
               <a href="#!">
-                <img src="./img/profile_icon.png" class="login-icon" />Log in</a
-              >
+                <img src="./img/Header/profile_icon.svg" class="login-icon">
+              </a>
             </li>
-          </span>
-        </ul>
+          </ul>
       </nav>
-      <span class="header-videos">
-        <video src="./Video/left-vid.mp4" loop autoplay muted></video>
+      <div class="header-videos">
+        <div class="video-holder">
+          <video src="./Video/left-vid.mp4" loop autoplay muted></video>
+          <button class="header-button" role="button"><span class="text">FALL/WINTER 2023</span><span>More</span></button>
+        </div>
+        
+      <div class="video-holder">
         <video src="./Video/right-vid.mp4" loop autoplay muted></video>
-      </span>
+        <!-- <button class="header-button">NEW ARRIVALS</button> -->
+      </div>
+      </div>
     </header>
+    <footer>
+      <ul class="footer-address" data-aos="zoom-in">
+        <li><a href="mailto:karpova.uk@gmail.com" target="_blank">karpova.uk@gmail.com</a></li>
+        <li><a target="_blank" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0+%D0%9F%D0%B8%D1%80%D0%BE%D0%B3%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE,+19%2F4,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4188718,30.4784734,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cecfbb957085:0xa4ad9947ea7eeb75!8m2!3d50.4188718!4d30.4784734"> Ул. А. Пироговского 19/4, Киев, Украина</a></li>
+      </ul>
+      <ul class="social-media-ul">
+        <li><a target="_blank" href="https://www.instagram.com/karpova.ukraine/"><img class="social-media" src="./img/Footer/Insta.svg" alt="Instagram"></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/karpova.ukraine/"><img class="social-media"  src="./img/Footer/Facebook.svg" alt="Facebook"></a></li>
+        <li><a target="_blank" href="https://pin.it/63gs2t5"><img class="social-media" src="./img/Footer/Pinterest.svg" alt="Pinterest"></a></li>
+      </ul>
+      <p class="license">©2020 KARPOVA</p>
+      <ul class="partners-logo-ul">
+        <li><img class="partners-logo" src="./img/Footer/Visa.svg" alt="Visa"></li>
+        <li><img class="partners-logo" src="./img/Footer/Mastercard.svg" alt="MasterCard"></li>
+        <li><img class="partners-logo" src="./img/Footer/Maestro.svg" alt="Maestro"></li>
+        <li><img class="partners-logo" src="./img/Footer/Fondy.svg" alt="Fondy"></li>
+        <li><img class="partners-logo" src="./img/Footer/ApplePay.svg" alt="ApplePay"></li>
+        <li><img class="partners-logo" src="./img/Footer/DHL.svg" alt="DHL"></li>
+      </ul>
+    </footer>
+    <button id="messageButton"><img src="./img/Footer/messages.svg"></button>
+    
+    <script src="./main.js"></script>
   </body>
 </html>
